@@ -5,3 +5,32 @@ div.right_column {
 div.left_column {
    margin-right: 170px;
 }
+
+#nav_container {
+	list-style-type: none;
+	margin-bottom: 15px;
+
+
+}
+
+#nav_container li {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+#nav_container a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+#nav_container a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+img.logo {
+	max-width: 200px;
+	float: right;
+}
