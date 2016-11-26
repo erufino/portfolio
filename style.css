@@ -1,16 +1,22 @@
 div.right_column {
-    width: 160px;
+    width: 50%;
     float: right;
+    padding: 20px;
 }
 div.left_column {
+   width: 50%;
    margin-right: 170px;
+   padding: 20px;
 }
 
 #nav_container {
 	list-style-type: none;
 	margin-bottom: 15px;
-
-
+	float: right;
+	margin-right: 40px;
+	margin-top: 20px;
+	height: 50px;
+	line-height: 38px;
 }
 
 #nav_container li {
@@ -30,7 +36,18 @@ div.left_column {
 	color: black;
 }
 
-img.logo {
-	max-width: 200px;
-	float: right;
+#logo {
+	max-width: 264px;
+	float: left;
+	padding: 10px;
+}
+
+#header-content {
+	height: 100px;
+}
+
+#header-image {
+	height: 500px;
+	background-color: #3498db;
+	margin-bottom: 45px;
 }
