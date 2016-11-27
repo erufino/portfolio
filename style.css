@@ -12,6 +12,10 @@ h1.header-text {
 	text-align: center;
 }
 
+a * {
+	font-weight: 600;
+}
+
 /****** 
 
 THIS IS THE NAVIGATION & LOGO
@@ -104,7 +108,6 @@ THIS IS THE HERO IMAGE
 	padding-top: 125px;
 	margin: 0 auto;
 	text-align: center;
-	width: 50%;
 }
 
 div.button-wrapper {
@@ -158,3 +161,68 @@ div.left_column {
    float: left;
    padding: 30px;
 }
+
+p.spinning-block {
+	height: 250px;
+	border: 1px solid #bdc3c7;
+	text-align: center;
+	line-height: 250px;
+	perspective: 600px;
+	-webkit-perspective: 600px;
+}
+
+#main_content {
+	height: 700px;
+}
+
+/****** 
+
+PLAYING WITH 3D SPACE 
+
+******/ 
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 320px;
+	border: 1px solid #ecf0f1;
+	margin: 25px auto;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
