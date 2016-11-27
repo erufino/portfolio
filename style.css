@@ -5,15 +5,11 @@ GLOBAL STYLES
 
 html * {
 
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', 'sans-serif';
 }
 
 h1.header-text {
 	text-align: center;
-}
-
-a * {
-	font-weight: 600;
 }
 
 /****** 
@@ -162,15 +158,6 @@ div.left_column {
    padding: 30px;
 }
 
-p.spinning-block {
-	height: 250px;
-	border: 1px solid #bdc3c7;
-	text-align: center;
-	line-height: 250px;
-	perspective: 600px;
-	-webkit-perspective: 600px;
-}
-
 #main_content {
 	height: 700px;
 }
@@ -188,27 +175,47 @@ PLAYING WITH 3D SPACE
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
+
 	}
 
-.flip-container, .front, .back {
-	width: 320px;
-	height: 320px;
-	border: 1px solid #ecf0f1;
-	margin: 25px auto;
+.flip-container {
+	width: 100%;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.front {
+	width: 100%;
+	height: 250px;
+	background-color: #5CB3FF;
+	box-shadow: 1px 1px 1px 1px #bdc3c7;
+	text-align: center;
+}
+
+.front a {
+	color: white;
+	font-size: 20px;
+	height: 250px;
+	line-height: 250px;
+}
+
+.back {
+	width: 100%;
+	height: 250px;
+	background-color: #5CB3FF;
+	box-shadow: 1px 1px 1px 1px #bdc3c7;
 }
 
 /* flip speed goes here */
 .flipper {
-	transition: 0.6s;
+	transition: 0.5s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -226,3 +233,11 @@ PLAYING WITH 3D SPACE
 	transform: rotateY(180deg);
 }
 
+.back a {
+	color: white;
+	font-size: 15px;
+	height: 250px;
+	line-height: 50px;
+	margin-left: 15px;
+	font-weight: bolder;
+}
