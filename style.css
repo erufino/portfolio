@@ -426,7 +426,7 @@ THESE ARE THE FLIP CARDS
 	}
 
 	#drawer-toggle:checked ~ #page-content {
-		margin-right: 300px;
+		margin-left: -300px;
 	}
 
 	/* On full screen width, hide it 
