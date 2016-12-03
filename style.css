@@ -37,10 +37,6 @@ THIS IS THE NAVIGATION & LOGO
 
 ******/ 
 
-/*#header-content {
-	height: 100px;
-}*/
-
 h1.my-name {
 	max-width: 264px;
 	float: left;
@@ -103,12 +99,11 @@ THIS IS THE HERO IMAGE
 
 
 #header-image {
-	height: 500px;
-	/*background-color: #3498db;*/	
+	height: 500px;	
 	background: linear-gradient(#3498db, white);
 	margin-bottom: 45px;
 	opacity: 1;
-}
+} 
 
 #hero-text {
 	color: white;
@@ -435,4 +430,46 @@ THESE ARE THE FLIP CARDS
 		padding: 10px 0;
 	}*/
 
+}
+
+/************
+
+PARALAX EFFECT STYLES
+
+*************/
+
+
+.parallax {
+  perspective: 1px;
+  height: 740px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  display: block;
+  perspective-origin-x: 100%;
+
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px;  
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0:;
+  transform-origin-x: 100%;
+  left: 0;
+
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+  padding-top: 280px;
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+  height: 500px;
 }
