@@ -9,6 +9,7 @@ html * {
 
 h1.header-text {
 	text-align: center;
+	font-weight: 200;
 }
 
 a.button-2 {
