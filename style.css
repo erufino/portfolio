@@ -104,9 +104,8 @@ THIS IS THE HERO IMAGE
 
 
 #header-image {
-	height: 500px;
-	/*background-color: #3498db;*/	
-	background: linear-gradient(-90deg, #3498db, #B1D6EF);
+	height: 450px;
+	background-color: #3C9BDB;
 	margin-bottom: 45px;
 	opacity: 1;
 }
@@ -114,7 +113,7 @@ THIS IS THE HERO IMAGE
 #hero-text {
 	color: white;
 	margin-top: 0px;
-	padding-top: 175px;
+	padding-top: 150px;
 	font-weight: 100;
 
 }
@@ -126,7 +125,7 @@ THIS IS THE HERO IMAGE
 }
 
 #hero-ctas {
-	padding-top: 125px;
+	padding-top: 50px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -144,9 +143,9 @@ a.button {
 	font-weight: 100;
 	font-size: 18px;
 	padding: 22px 22px;
-	background-color: #3498db;
+	background-color: #3C9BDB;
 	margin: 15px 15px 0px 15px;
-	box-shadow: 0px 0px 0px 1px #3498db;
+	box-shadow: 0px 0px 0px 1px white;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
@@ -156,9 +155,8 @@ a.button {
 
 a.button:hover {
 	text-decoration: none;
-	color: white;
-	/*background-color: #2980b9;*/
-	background:rgba(0,0,0,0.0);
+	color: #3C9BDB;
+	background:white;
 	box-shadow: 0px 0px 0px 1px white;
 }
 
@@ -271,87 +269,98 @@ THESE ARE THE FLIP CARDS
 	padding: 15px;
 }
 
-body {
-    padding:25px;
-    font-family:sans-serif;
-}
 
 .timeline {
     white-space:nowrap;
     overflow-x: scroll;
-    padding:30px 0 10px 0;
+    padding:70px 0 10px 0;
     position:relative;
 }
 
 .entry {
     display:inline-block;
     vertical-align:top;
-    background:#13519C;
-    color:#fff;
+    color: black;
     padding:10px;
     font-size:12px;
-    text-align:center;
     position:relative;
-    border-top:4px solid #06182E;
     border-radius:3px;
     min-width:200px;
-    max-width:500px;
-}
-
-.entry img {
-    display:block;
-    max-width:100%;
-    height:auto;
-    margin-bottom:10px;
+    width: 20%;
+    margin: auto 0;
+    text-align: center;
 }
 
 .entry:after {
     content:'';
     display:block;
-    background:#eee;
-    width:7px;
-    height:7px;
-    border-radius:6px;
-    border:3px solid #06182E;
+    width:20px;
+    height:20px;
+    border-radius: 100%;
+    border:0px solid white;
     position:absolute;
     left:50%;
     top:-30px;
-    margin-left:-6px;
+    margin-left:-9.5px;
 }
 
 .entry:before {
     content:'';
     display:block;
-    background:#06182E;
-    width:5px;
-    height:20px;
+    background:#979797;
+    width:1px;
+    height:50px;
     position:absolute;
     left:50%;
     top:-20px;
-    margin-left:-2px;
 }
 
-.entry h1 {
-    color:#fff;
-    font-size:18px;
-    font-family:Georgia, serif;
-    font-weight:bold;
-    margin-bottom:10px;
+.entry:hover:after {
+    content:'';
+    display:block;
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    border:0px solid white;
+    position:absolute;
+    left:48%;
+    top:-35px;
+    margin-left:-9.5px;
 }
 
-.entry h2 {
-    letter-spacing:.2em;
-    margin-bottom:10px;
-    font-size:14px;
+.entry p {
+	margin-bottom: 0px;
+}
+
+.year {
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.timeline-header {
+	color: #979797;
+	font-weight: bold;
 }
 
 .bar {
-    height:4px;
-    background:#eee;
+    height:1px;
+    background: #979797;
     width:100%;
     position:relative;
-    top:13px;
+    top:50px;
     left:0;
+}
+
+.blue:after {
+	background-color: #419BF9;
+}
+
+.green:after {
+	background-color: #59CD90;
+}
+
+.yellow:after {
+	background-color: #FAC05E;
 }
 
 @media all and (min-width: 640px) {
