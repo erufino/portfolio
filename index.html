@@ -1,101 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title> Ezra Rufino's Portfolio</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-    <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
-    <label for="drawer-toggle" id="drawer-toggle-label"></label>
-    <header>
-        <div id="header-content">
-            <h1 class="my-name">Ezra Rufin<font color="#3498db">o</font></h1>
-            <ul id="nav_container" class="nav nav-pills">
-                <li role="presentation" class="active"><a href="/about.html">home</a></i>
+    <head>
+        <title> Ezra Rufino's Portfolio</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+        <header>
+            <div id="header-content">
+                <h1 class="my-name">Ezra Rufin<font color="#3498db">o</font></h1>
+                <ul id="nav_container" class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="/about.html">home</a></i>
                     <li role="presentation"><a href="/about.html">about me</a></i>
-                        <li role="presentation"><a href="/work.html">work & projects</a></i>
-                            <li role="presentation"><a href="/resume.html">resume</a></i>
-                                <li role="presentation"><a href="/contact.html">contact</a></i>
+                    <li role="presentation"><a href="/work.html">work & projects</a></i>
+                    <li role="presentation"><a href="/resume.html">resume</a></i>
+                    <li role="presentation"><a href="/contact.html">contact</a></i>
+                </ul>
+            </div>
+        </header>
+        <nav id="drawer">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work & Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </div>
-    </header>
-    <nav id="drawer">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work & Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div id="page-content">
-        <div id="header-image">
-            <h1 class="header-text" id="hero-text"> Welcome to a website all about <a  target="_blank" rel="noopener" href="https://youtu.be/j13oJajXx0M" id="header-text-link">me</a>. </h1>
-            <div id="hero-ctas">
-                <div class="button-wrapper">
-                    <a class="button cta-button" href="#"> ABOUT ME </a>
-                </div>
-                <div class="button-wrapper">
-                    <a class="button cta-button" href="#"> RESUME </a>
+        </nav>
+        <div id="page-content">
+            <div id="header-image">
+                <h1 class="header-text" id="hero-text"> Welcome to a website all about <a  target="_blank" rel="noopener" href="https://youtu.be/j13oJajXx0M" id="header-text-link">me</a>. </h1>
+                <div id="hero-ctas">
+                    <div class="button-wrapper">
+                        <a class="button cta-button" href="#"> ABOUT ME </a>
+                    </div>
+                    <div class="button-wrapper">
+                        <a class="button cta-button" href="#"> RESUME </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="main_content">
-            <h1 class="header-text"> more stuff about me </h1>
-            <center>
+            <div id="main_content">
+                <h1 class="header-text"> more stuff about me </h1>
+                <center>
                 <p>(this whole site is pretty much about me)</p>
-            </center>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front front-a">
-                                    <a href="/work.html">work & projects</a>
-                                </div>
-                                <div class="back back-a">
-                                    <a href="/work.html">WORK & PROJECTS</a>
-                                    <p> I've done a lot of work. People have told me it's good. Click here if you want to see some of the work, and projects I've done.</p>
-                                    <a class="button-2" href="#"> WORK & PROJECTS ></a>
+                </center>
+                <div class="bar"></div>
+                <div class="timeline">
+                    <div class="entry">
+                        <h1>1990</h1>
+                        <h2>Entry Title</h2>
+                        <img src="http://dummyimage.com/300x200/000/fff"/>
+                        Here's the info about this date
+                    </div>
+                    <div class="entry">
+                        <h1>1995</h1>
+                        Here's the info about this date
+                    </div>
+                    <div class="entry">
+                        <h1>2000</h1>
+                        Here's the info about this date
+                    </div>
+                    <div class="entry">
+                        <h1>2005</h1>
+                        Here's the info about this date
+                    </div>
+                    <div class="entry">
+                        <h1>2010</h1>
+                        Here's the info about this date
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front front-a">
+                                        <a href="/work.html">work & projects</a>
+                                    </div>
+                                    <div class="back back-a">
+                                        <a href="/work.html">WORK & PROJECTS</a>
+                                        <p> I've done a lot of work. People have told me it's good. Click here if you want to see some of the work, and projects I've done.</p>
+                                        <a class="button-2" href="#"> WORK & PROJECTS ></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front front-b">
-                                    <a class="spinning-block" href="/contact.html">contact</a>
-                                </div>
-                                <div class="back back-b">
-                                    <a class="spinning-block-link" href="/contact.html">CONTACT</a>
-                                    <p> I've done a lot of work. People have told me it's good. Click here if you want to see some of the work, and projects I've done.</p>
-                                    <a class="button-2" href="#"> GET MY DIGITS ></a>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front front-b">
+                                        <a class="spinning-block" href="/contact.html">contact</a>
+                                    </div>
+                                    <div class="back back-b">
+                                        <a class="spinning-block-link" href="/contact.html">CONTACT</a>
+                                        <p> I've done a lot of work. People have told me it's good. Click here if you want to see some of the work, and projects I've done.</p>
+                                        <a class="button-2" href="#"> GET MY DIGITS ></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front front-c">
-                                    <a class="spinning-block" href="/extra-extra.html">extra curricular</a>
-                                </div>
-                                <div class="back back-c">
-                                    <a class="spinning-block-link" href="/extra-extra.html">EXTRA CURRICULAR</a>
-                                    <p> I've done a lot of work. People have told me it's good. Click here if you want to see some of the work, and projects I've done.</p>
-                                    <a class="button-2" href="#"> EXTRA CURRICULAR ></a>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front front-c">
+                                        <a class="spinning-block" href="/extra-extra.html">extra curricular</a>
+                                    </div>
+                                    <div class="back back-c">
+                                        <a class="spinning-block-link" href="/extra-extra.html">EXTRA CURRICULAR</a>
+                                        <p> I've done a lot of work. People have told me it's good. Click here if you want to see some of the work, and projects I've done.</p>
+                                        <a class="button-2" href="#"> EXTRA CURRICULAR ></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +127,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
