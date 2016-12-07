@@ -104,18 +104,16 @@ THIS IS THE HERO IMAGE
 
 
 #header-image {
-	height: 100vh;
+	height: calc(100vh - 100px);
 	background-color: #3C9BDB;
-	margin-bottom: 45px;
-	opacity: 1;
+/*	margin-bottom: 45px;
+*/	opacity: 1;
 }
 
 #hero-text {
 	color: white;
-	margin-top: 0px;
-	padding-top: 150px;
+	padding-top: 20vh;
 	font-weight: 100;
-
 }
 
 #header-text-link {
@@ -125,9 +123,20 @@ THIS IS THE HERO IMAGE
 }
 
 #hero-ctas {
-	padding-top: 50px;
+	padding-top: 15vh;
 	margin: 0 auto;
 	text-align: center;
+}
+
+.chevron-header {
+	/*margin: 0px auto;*/
+	vertical-align: center;
+	display: block;
+	color: white;
+	text-align: center;
+	margin-top: 27vh;
+	font-size: 30px;
+	font-weight: 100;
 }
 
 div.button-wrapper {
@@ -374,6 +383,11 @@ THESE ARE THE FLIP CARDS
 }
 
 @media all and (max-width: 640px) {
+	
+	.chevron-header {
+		margin-top: 10vh;
+}
+
 	#nav_container {
 		display: none;
 	}
