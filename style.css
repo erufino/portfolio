@@ -38,9 +38,10 @@ THIS IS THE NAVIGATION & LOGO
 
 ******/ 
 
-/*#header-content {
+#header-content {
 	height: 100px;
-}*/
+	margin-bottom: -17px;
+}
 
 h1.my-name {
 	max-width: 264px;
@@ -106,8 +107,8 @@ THIS IS THE HERO IMAGE
 #header-image {
 	height: calc(100vh - 100px);
 	background-color: #3C9BDB;
-/*	margin-bottom: 45px;
-*/	opacity: 1;
+	opacity: 1;
+	margin-top: -17px;
 }
 
 #hero-text {
@@ -379,6 +380,7 @@ THESE ARE THE FLIP CARDS
 
 #header-content {
 	height: 100px;
+	margin-bottom: -17px;
 }
 }
 
