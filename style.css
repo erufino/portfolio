@@ -32,6 +32,22 @@ a.button-2:hover {
 	color: white;
 }
 
+.blue-back {
+	background-color: #419BF9;
+}
+
+.green-back {
+	background-color: #59CD90;
+}
+
+.yellow-back {
+	background-color: #FAC05E;
+}
+
+.red-back {
+	background-color: #FF5E5B
+}
+
 /****** 
 
 THIS IS THE NAVIGATION & LOGO
@@ -135,7 +151,7 @@ THIS IS THE HERO IMAGE
 	display: block;
 	color: white;
 	text-align: center;
-	margin-top: 27vh;
+	margin-top: 25vh;
 	font-size: 30px;
 	font-weight: 100;
 }
@@ -180,6 +196,27 @@ THIS IS THE MAIN SITE CONTENT
 	width: 80%;
 	margin: 0 auto;
 }
+
+.section {
+	width: 100%;
+	height: 93px;
+	margin: 20px 0px 20px 0px;
+	display:block;
+}
+
+.section-txt{
+	white-space: nowrap;
+	font-size: 148px;
+	color:white;
+	letter-spacing: 6.88px;
+	font-weight: 100;
+	text-transform: uppercase;
+	display:block;
+	margin-top:-168px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 
 /****** 
 
@@ -281,10 +318,11 @@ THESE ARE THE FLIP CARDS
 
 
 .timeline {
-    white-space:nowrap;
+    
     overflow-x: scroll;
     padding:70px 0 10px 0;
     position:relative;
+    white-space: nowrap;
 }
 
 .entry {
@@ -296,6 +334,7 @@ THESE ARE THE FLIP CARDS
     position:relative;
     border-radius:3px;
     min-width:200px;
+    max-width:300px;
     width: 20%;
     margin: auto 0;
     text-align: center;
@@ -340,6 +379,8 @@ THESE ARE THE FLIP CARDS
 
 .entry p {
 	margin-bottom: 0px;
+	max-width: 230px;
+	display:block;
 }
 
 .year {
@@ -359,6 +400,10 @@ THESE ARE THE FLIP CARDS
     position:relative;
     top:50px;
     left:0;
+}
+
+p .timeline-details {
+	max-width: 200px;
 }
 
 .blue:after {
@@ -386,8 +431,18 @@ THESE ARE THE FLIP CARDS
 
 @media all and (max-width: 640px) {
 	
+	.section-txt{
+	white-space: normal;
+	font-size: 60px;
+	margin-top:-128px;
+	line-height: 62px;
+}
+
+	.contact {
+	margin-top:-100px;
+	}
 	.chevron-header {
-		margin-top: 10vh;
+		margin-top: 8vh;
 }
 
 	#nav_container {
