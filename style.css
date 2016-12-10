@@ -190,6 +190,8 @@ THIS IS THE HERO IMAGE
 	padding-top: 15vh;
 	margin: 0 auto;
 	text-align: center;
+	z-index: 1;
+	position: relative;
 }
 
 .chevron-header {
@@ -216,7 +218,7 @@ a.button {
 	font-weight: 100;
 	font-size: 18px;
 	padding: 22px 22px;
-	background-color: #3C9BDB;
+	/*background-color: #3C9BDB;*/
 	margin: 15px 15px 0px 15px;
 	box-shadow: 0px 0px 0px 1px white;
 	text-align: center;
@@ -233,11 +235,29 @@ a.button:hover {
 	box-shadow: 0px 0px 0px 1px white;
 }
 
+.main-image-txt {
+	white-space: nowrap;
+	font-size: 400px;
+	color: white;
+	opacity: 0.2;
+	letter-spacing: 6.88px;
+	font-weight: 300;
+	text-transform: uppercase;
+	display:block;
+	margin-top:-420px;
+	overflow-x: hidden;
+	margin-left: -150px;
+}
+
 /****** 
 
 THIS IS THE MAIN SITE CONTENT 
 
 ******/ 
+
+#main-content {
+	margin-top: -130px;
+}
 
 .container {
 	width: 80%;
@@ -263,6 +283,10 @@ THIS IS THE MAIN SITE CONTENT
 	padding-left: 20px;
 	padding-right: 20px;
 	overflow-x: hidden;
+}
+
+#about-details {
+	padding: 0px 60px 0px 60px;
 }
 
 
@@ -466,6 +490,12 @@ p .timeline-details {
 	background-color: #FAC05E;
 }
 
+/******************************
+
+MEDIA QUERIES FOR LARGER DEVICES (ABOVE 640)
+
+****************************/
+
 @media all and (min-width: 640px) {
 #drawer, #drawer-toggle, #drawer-toggle-label {
 	display: none;
@@ -477,8 +507,20 @@ p .timeline-details {
 }
 }
 
+/******************************
+
+MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
+
+****************************/
+
 @media all and (max-width: 640px) {
 	
+
+#about-details {
+	padding: 0px 25px 0px 25px;
+}
+
+
 	.section-txt{
 	white-space: normal;
 	font-size: 60px;
