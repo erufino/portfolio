@@ -76,7 +76,7 @@ THIS IS THE FOOTER
 	list-style-type: none;
 	line-height: 30px;
 	font-size: 15px;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 #footer-nav {
@@ -694,4 +694,36 @@ MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
 		padding: 10px 0;
 	}*/
 
+}
+
+/******************************
+
+MEDIA QUERIES FOR SMALLER DEVICES (BELOW 420)
+
+****************************/
+
+@media all and (max-width: 420px) {
+	
+	#footer {
+	height: 370px;
+	width: 100%;
+	background-color: #E2E2E2;
+}
+
+#footer-contact ul, #footer-nav ul{
+	list-style-type: none;
+	line-height: 30px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#footer-nav {
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#footer-contact {
+	float: left;
+	margin-left: 30px;
 }
