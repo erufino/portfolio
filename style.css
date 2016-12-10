@@ -518,10 +518,13 @@ MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
 @media all and (max-width: 640px) {
 	
 
+#header-image {
+	height: calc(100vh - 50px);
+}
+
 #about-details {
 	padding: 0px 25px 0px 25px;
 }
-
 
 	.section-txt{
 	white-space: normal;
