@@ -200,9 +200,11 @@ THIS IS THE HERO IMAGE
 	display: block;
 	color: white;
 	text-align: center;
-	margin-top: 25vh;
+	margin-top: 22vh;
 	font-size: 30px;
 	font-weight: 100;
+	z-index: 1;
+	position: relative;
 }
 
 div.button-wrapper {
@@ -629,7 +631,7 @@ MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
 		right: -300px;
 		height: 100%;
 		width: 300px;
-		background: black;
+		background: #3C9BDB;
 		overflow-x: hidden;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
@@ -641,7 +643,7 @@ MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
 	}
 
 	#drawer li {
-		border-bottom: 1px solid #95a5a6;
+		border-bottom: 1px solid white;
 	}
 
 	#drawer a {
