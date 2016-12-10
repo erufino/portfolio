@@ -45,7 +45,53 @@ a.button-2:hover {
 }
 
 .red-back {
-	background-color: #FF5E5B
+	background-color: #FF5E5B;
+}
+
+.grey-back {
+	background-color: #E2E2E2;
+}
+
+.font-light {
+	font-weight: 100px;
+}
+
+.font-heavy {
+	font-weight: bold;
+}
+
+/****** 
+
+THIS IS THE FOOTER
+
+******/ 
+
+#footer {
+	height: 220px;
+	width: 100%;
+	background-color: #E2E2E2;
+}
+
+#footer-contact ul, #footer-nav ul{
+	list-style-type: none;
+	line-height: 30px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#footer-nav {
+	float: left;
+	margin-left: 30px;
+}
+
+#footer-contact {
+	float: right;
+	margin-right: 30px;
+}
+
+.footer-header-styling {
+	font-weight: bold;
+	color: #419BF9;
 }
 
 /****** 
@@ -68,6 +114,8 @@ h1.my-name {
 	font-weight: 200;
 	border: 0.5px solid #bdc3c7;
 	margin-left: 10px;
+	background-image: url("background.png");
+	color:white;
 }
 
 #nav_container {
@@ -122,8 +170,7 @@ THIS IS THE HERO IMAGE
 
 #header-image {
 	height: calc(100vh - 100px);
-	background-color: #3C9BDB;
-	opacity: 1;
+	background-color: #3C9BDB;	
 	margin-top: -17px;
 }
 
