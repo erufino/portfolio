@@ -1,3 +1,6 @@
+// animated modal (popup / lightbox) JS
+$("#demo01").animatedModal();
+
 $(function() {
   // $("a[href=#menuExpand]").click(function(e) {
   // showHideMobile();

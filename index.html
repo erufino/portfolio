@@ -13,6 +13,8 @@
         <script src="script.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,700" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
     </head>
     <body>
         <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
@@ -106,7 +108,7 @@
                             <div class="flip-container">
                                 <div class="flipper">
                                     <div class="front front-a">
-                                        <a href="/work.html">work & projects</a>
+                                        <a href="/work.html">NYMB.co</a>
                                     </div>
                                     <div class="back back-a">
                                         <a href="/work.html">WORK & PROJECTS</a>
@@ -117,7 +119,15 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-8">
-                            <div class="wp-txt-details" id="nymb"> NYMB.co </div>
+                            <div class="wp-left-details" id="nymb"> Lot's of details about NYMB.co will go here. </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wp-full-details">
+                            <h2> FabKids </h2>
+                                <a class="button-blk" id="fk-btn">Learn More</a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -136,7 +146,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-8">
-                            <div class="wp-txt-details" id="nymb"> NYMB.co </div>
+                            <div class="wp-left-details" id="nymb"> NYMB.co </div>
                         </div>
                     </div>
                     <div class="row">
@@ -156,6 +166,21 @@
                         </div>
                     </div>
                 </div>
+                <!--START MODAL CODE-->
+                <!--Call your modal-->
+                <a id="demo01" href="#animatedModal">DEMO01</a>
+                <!--DEMO01-->
+                <div id="animatedModal" class="animated animatedModal-off bounceOut">
+                    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                    <div id="close-container" class="close-animatedModal"> 
+                        CLOSE MODAL
+                    </div>  
+                    <div class="modal-content">
+                              <!--Your modal content goes here-->
+                              HIHIHIHIH
+                    </div>
+                </div>
+                <!--END MODAL CODE-->
                 <div id="contact" class="section red-back"></div>
                 <div class="section-txt contact"> contact</div>
                 <div id="footer">
@@ -180,5 +205,7 @@
                 </div>
             </div>
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="yourPath/animatedModal.min.js"></script>
     </body>
 </html>
