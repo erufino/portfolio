@@ -135,7 +135,7 @@ MODAL STYLES
 
 ******/
 
-#animated-modal {
+#animatedModal {
 	position: fixed;
     width: 100%;
     height: 100%;
@@ -437,9 +437,44 @@ THESE ARE THE FLIP CARDS
 	width: 100%;
 	height: 250px;
 	/*background-color: #3498db;*/
-	background-color:#f1c40f;
+	/*background-color:#f1c40f;*/
+	/*background-image: url("NYMB-Flip-Card.png");
+	background-size: 100%;
+	background-position: 50% 50%;*/
 	box-shadow: 1px 1px 1px 1px #bdc3c7;
 	text-align: center;
+}
+
+.front-a {
+	background-image: url("NYMB-Flip-Card.png");
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-color: #6F8295;
+	background-position: 50% 50%;
+}
+
+.front-b {
+	background-image: url("FabKids-Logo-Flip-Card.png");
+	background-size: 120px 120px;
+	background-repeat: no-repeat;
+	background-color: #6F8295;
+	background-position: 30px 80%;
+}
+
+.front-c {
+	background-image: url("Books-Flip-Card.png");
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+	background-color: #6F8295;
+	background-position: 50% 50%;
+}
+
+.front-d {
+	background-image: url("Portfolio-Flip-Card.png");
+	background-size: 220px 220px;
+	background-repeat: no-repeat;
+	background-color: #6F8295;
+	background-position: 50% 50%;
 }
 
 .front a {
