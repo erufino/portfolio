@@ -12,7 +12,7 @@ h1.header-text {
 	font-weight: 200;
 }
 
-a.button-2 {
+a.button-light {
 	height: 42px;
 	width: 250px;
 	color: white;
@@ -27,9 +27,36 @@ a.button-2 {
 	margin-left: 40px;
 }
 
-a.button-2:hover {
+a.button-light:hover {
 	background-color: rgba(255,255,255,0.3);
 	color: white;
+}
+
+a.button-dark {
+	height: 32px;
+	width: 150px;
+	font-weight: 100;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	padding: 8px;
+	position: absolute;
+	right: 20px;
+	bottom: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: 300;
+	background-color: #59CD90;
+	color: white;
+	box-shadow: 0px 0px 0px 1px white;
+}
+
+a.button-dark:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 0px 1px black;
 }
 
 .blue-back {
@@ -127,6 +154,7 @@ a.button-blk:hover {
 h2 {
 	font-size: 20px;
 	font-weight: bold;
+	margin-top:0px;
 }
 
 /****** 
@@ -137,8 +165,27 @@ MODAL STYLES
 
 .modal-content {
 	background-color: white;
+	font-size: 25px;
+	color: black;	
+	width: 100%;
+	height: 100%;
+	border-color: white;
+	border-radius: 0px;
 }
 
+#animatedModal {
+	background-color: white;
+	color: black;
+}
+
+.close-animatedModal {
+	background-color: white;
+	width: 100%;
+	cursor: pointer;
+	text-align: center;
+	border-color: white;
+	border-radius: 0px;
+}
 
 /****** 
 
@@ -342,11 +389,11 @@ THIS IS THE MAIN SITE CONTENT
 	padding: 0px 60px 0px 60px;
 }
 
-.wp-left-details {
+.wp-right-details {
 	width: 100%;
-	height: 250px;
-	margin-top:15px;
+	min-height: 250px;
 	padding: 15px;
+	margin-bottom: 10px;
 }
 
 .wp-full-details {
@@ -361,6 +408,18 @@ THIS IS THE MAIN SITE CONTENT
 
 #fk-btn {
 	float: right;
+}
+
+.techfab-header {
+	font-size: 32px;
+}
+
+.tech-img {
+	height: 32px;
+}
+
+.fk-img {
+	height: 40px;
 }
 /****** 
 
@@ -621,7 +680,14 @@ MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
 ****************************/
 
 @media all and (max-width: 640px) {
-	
+
+.tech-img {
+	height: 22px;
+}
+
+.fk-img {
+	height: 32px;
+}	
 
 #header-image {
 	height: calc(100vh - 50px);
