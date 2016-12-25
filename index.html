@@ -6,14 +6,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,700" rel="stylesheet">
+
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-        <script src="script.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,700" rel="stylesheet">
+        <script src="js/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
@@ -203,7 +207,67 @@
                 </div>
             </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="/animatedModal.min.js"></script>
+         <!--Call your modal-->
+        <ul>
+            <li><a id="demo01" href="#animatedModal">DEMO01</a></li>
+            <li><a id="demo02" href="#modal-02">DEMO02</a></li>
+        </ul>
+      
+      
+        <!--DEMO01-->
+        <div id="animatedModal">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+            <div  id="btn-close-modal" class="close-animatedModal"> 
+                CLOSE MODAL
+            </div>
+                
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+            </div>
+        </div>
+
+        <!--DEMO02-->
+        <div id="modal-02">
+            <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+            <div  id="btn-close-modal" class="close-modal-02"> 
+                CLOSE MODAL
+            </div>
+            
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+            </div>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/animatedModal.min.js"></script>
+        <script>
+
+            //demo 01
+            $("#demo01").animatedModal();
+
+            //demo 02
+            $("#demo02").animatedModal({
+                modalTarget:'modal-02',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });
+
+        // </script>  
+
     </body>
 </html>
