@@ -246,7 +246,7 @@ MODAL STYLES
 
 .modal-content {
 	background-color: white;
-	font-size: 25px;
+	font-size: 14px;
 	color: black;	
 	width: 100%;
 	height: 100%;
@@ -259,13 +259,16 @@ MODAL STYLES
 	color: black;
 }
 
-.close-animatedModal {
-	background-color: white;
-	width: 100%;
+#btn-close-modal {
+	border-radius: 100%;
+	border: 2px solid black;
+	padding: 5px;
 	cursor: pointer;
+	width: 34px;
+	margin: 5px auto;
 	text-align: center;
-	border-color: white;
-	border-radius: 0px;
+	font-weight: bold;
+
 }
 
 /****** 
