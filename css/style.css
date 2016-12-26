@@ -252,6 +252,7 @@ MODAL STYLES
 	height: 100%;
 	border-color: white;
 	border-radius: 0px;
+	display: block;
 }
 
 #animatedModal {
