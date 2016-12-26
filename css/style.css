@@ -32,7 +32,7 @@ a.button-light:hover {
 	color: white;
 }
 
-a.button-dark {
+a.button-green {
 	height: 32px;
 	width: 150px;
 	font-weight: 100;
@@ -53,7 +53,88 @@ a.button-dark {
 	box-shadow: 0px 0px 0px 1px white;
 }
 
-a.button-dark:hover {
+a.button-green:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 0px 1px black;
+}
+
+a.button-yellow {
+	height: 32px;
+	width: 150px;
+	font-weight: 100;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	padding: 8px;
+	position: absolute;
+	right: 20px;
+	bottom: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: 300;
+	background-color: #FAC05E;
+	color: white;
+	box-shadow: 0px 0px 0px 1px white;
+}
+
+a.button-yellow:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 0px 1px black;
+}
+
+a.button-blue {
+	height: 32px;
+	width: 150px;
+	font-weight: 100;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	padding: 8px;
+	position: absolute;
+	right: 20px;
+	bottom: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: 300;
+	background-color: #419BF9;
+	color: white;
+	box-shadow: 0px 0px 0px 1px white;
+}
+
+a.button-blue:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 0px 1px black;
+}
+
+a.button-red {
+	height: 32px;
+	width: 150px;
+	font-weight: 100;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	padding: 8px;
+	position: absolute;
+	right: 20px;
+	bottom: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: 300;
+	background-color: #FF5E5B;
+	color: white;
+	box-shadow: 0px 0px 0px 1px white;
+}
+
+a.button-red:hover {
 	background-color: white;
 	color: black;
 	box-shadow: 0px 0px 0px 1px black;
@@ -152,7 +233,7 @@ a.button-blk:hover {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: bold;
 	margin-top:0px;
 }
@@ -306,6 +387,7 @@ THIS IS THE HERO IMAGE
 	color: white;
 	padding-top: 40vh;
 	font-weight: 100;
+	z-index: 1;
 }
 
 #header-text-link {
@@ -347,6 +429,7 @@ THIS IS THE HERO IMAGE
 	margin-top:-420px;
 	overflow-x: hidden;
 	margin-left: -150px;
+	z-index: 0;
 }
 
 /****** 
@@ -435,6 +518,19 @@ THIS IS THE MAIN SITE CONTENT
 	width: 300px;
 	font-size: 18px;
 	margin: 0px auto;
+	font-weight: 200;
+}
+
+#contact-details {
+	margin-top: -45px;
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: 200;
+	margin-left: 8%;
+}
+
+#contact-details ul {
+	list-style-type: none;
 }
 /****** 
 
@@ -887,6 +983,10 @@ MEDIA QUERIES FOR SMALLER DEVICES (BELOW 640)
 .row {
 	border: 1px solid #D8D8D8;
 	margin-bottom: 10px;
+}
+
+#contact-details {
+	margin-top: 25px;
 }
 
 }
